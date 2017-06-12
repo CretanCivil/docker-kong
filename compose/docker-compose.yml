@@ -72,7 +72,7 @@ kong:
 kong-dashboard:
   image: pgbi/kong-dashboard:v2
   ports:
-    - 8080:9001
+    - 9001:9001
   
  
   
