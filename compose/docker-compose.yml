@@ -67,4 +67,12 @@ kong:
   environment:
     - KONG_DATABASE=postgres
     - KONG_PG_HOST=kong-database
+    
+ # kong dashboard
+ kong-database:
+  image: pgbi/kong-dashboard:v2
+  ports:
+    - 8080:9001
+  
+ 
   
