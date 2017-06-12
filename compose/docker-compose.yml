@@ -68,8 +68,8 @@ kong:
     - KONG_DATABASE=postgres
     - KONG_PG_HOST=kong-database
     
- # kong dashboard
- kong-dashboard:
+# kong dashboard
+kong-dashboard:
   image: pgbi/kong-dashboard:v2
   ports:
     - 8080:9001
