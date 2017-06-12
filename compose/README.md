@@ -2,6 +2,10 @@
 
 This is the official Docker Compose template for [Kong][kong-site-url].
 
+# dns
+如果containerpilot下载不动，请修改/etc/hosts
+54.231.72.19 github-production-release-asset-2e65be.s3.amazonaws.com
+
 # What is Kong?
 
 You can find the official Docker distribution for Kong at [https://hub.docker.com/r/mashape/kong/](https://hub.docker.com/r/mashape/kong/)
