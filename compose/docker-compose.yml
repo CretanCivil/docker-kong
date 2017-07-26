@@ -72,6 +72,7 @@ kong:
 # kong dashboard
 kong-dashboard:
   image: pgbi/kong-dashboard:v2
+  command: -a user=password
   ports:
     - 9001:8080
   
