@@ -50,6 +50,7 @@ kong-database:
     - POSTGRES_DB=kong
   volumes:     
     - ./data:/var/lib/postgresql/data
+
 # Kong
 
 kong:
