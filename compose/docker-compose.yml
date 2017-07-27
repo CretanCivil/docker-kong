@@ -48,8 +48,8 @@ kong-database:
   environment:
     - POSTGRES_USER=kong
     - POSTGRES_DB=kong
-  #volumes:     
-  #  - ./data:/var/lib/postgresql/data
+  volumes:     
+    - ./data:/var/lib/postgresql/data
 # Kong
 
 kong:
