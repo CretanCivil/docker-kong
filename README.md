@@ -39,3 +39,35 @@ kong-database:
     - POSTGRES_DB=kong
 ``` 
 完成
+
+8. psql -h 172.29.231.80 -U kong -d kong
+9. \l 查看数据库
+10. \dt 查看所有表
+
+```
+                   List of relations
+ Schema |             Name              | Type  | Owner 
+--------+-------------------------------+-------+-------
+ public | acls                          | table | kong
+ public | apis                          | table | kong
+ public | basicauth_credentials         | table | kong
+ public | cluster_events                | table | kong
+ public | consumers                     | table | kong
+ public | hmacauth_credentials          | table | kong
+ public | jwt_secrets                   | table | kong
+ public | keyauth_credentials           | table | kong
+ public | oauth2_authorization_codes    | table | kong
+ public | oauth2_credentials            | table | kong
+ public | oauth2_tokens                 | table | kong
+ public | plugins                       | table | kong
+ public | ratelimiting_metrics          | table | kong
+ public | response_ratelimiting_metrics | table | kong
+ public | schema_migrations             | table | kong
+ public | ssl_certificates              | table | kong
+ public | ssl_servers_names             | table | kong
+ public | targets                       | table | kong
+ public | ttls                          | table | kong
+ public | upstreams                     | table | kong
+(20 rows)
+
+```
